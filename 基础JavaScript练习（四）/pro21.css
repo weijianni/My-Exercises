@@ -1,0 +1,27 @@
+div {
+	margin-bottom : 20px ;
+}
+	textarea {
+		vertical-align : top ;
+	}
+	#confirm {
+		height : 34px ;
+		width : 100px ;
+		border-radius : 50px ;
+		border : none ;
+		background-color : lightblue ;
+		color : white ;
+		cursor : pointer ;
+	}
+	span {
+		display : inline-block ;
+		padding : 5px 8px ;
+		border : none ;
+		border-radius : 5px ;
+		background-color : red;
+		margin-right : 15px ;
+		cursor : pointer ;
+	}
+	span:hover {
+		background-color : lightgreen ;
+	}

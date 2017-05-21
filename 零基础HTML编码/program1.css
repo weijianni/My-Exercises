@@ -1,0 +1,20 @@
+*{
+	font-weight:bold
+}
+
+a{
+	color:blue;
+}
+
+img{
+	width:300px;
+	height:245px
+}
+
+.thePictureList{
+	list-style:none;
+}
+
+.listUnit{
+	color:purple
+}

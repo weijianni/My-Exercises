@@ -1,0 +1,107 @@
+body{
+	margin:0px;
+	padding:0px;
+	background-color:#e2dbdb;
+}
+.special-1{
+		background-image:url('百度logo1.jpg');
+	background-position:left;
+	background-repeat:no-repeat;
+}
+.specialPassage{
+	height:60px;
+	background-color:#504c4c;
+}
+.specialPassage ul{
+	float:right;
+	vertical-align:middle;
+	white-space:nowrap;
+}
+.specialPassage ul li{
+	float:left;
+	font-size:10px;
+	margin-right:20px;
+}
+.specialPassage ul li a{
+	color:white;
+	text-decoration:none;
+}
+.specialPassage ul li .special-a{
+	color:#ada9a9;
+}
+a{
+	color:blue;
+}
+h3{
+	color:#585757;
+	font-size:15px;
+}
+.articleMessage{
+	color:#656363;
+	font-weight:bold;
+	font-size:10px;
+}
+.passage{
+	background-color:white;
+	margin:20px;
+	border:1px solid #bfb7b7;
+	box-shadow:0 0 5px rgba(0,0,0,.2);
+	padding:20px;
+}
+img{
+	width:300px;
+	height:245px
+}
+
+.thePictureList{
+	list-style:none;
+}
+
+.listUnit{
+	color:purple
+}
+
+.list{
+	width:100%;
+	text-align:left;
+	padding:0;
+	border-collapse: collapse;   //实现table单元格的边框无间隙
+	
+}
+.list thead{
+	background-color:#1d1b1b;
+	color:white;
+	border:1px solid #bfb7b7;
+}
+.list tbody tr th{
+	border:1px solid #bfb7b7;
+}
+.list tbody .list-last{
+	background-color:#d8d3d3;
+	border:1px solid #bfb7b7;
+}
+.passage .formMessage div label{
+	vertical-align:top;
+	width:35%;
+	text-align:right;
+	display:inline-block;
+}
+.passage .formMessage textarea{
+	width:50%;
+	height:100px;
+}
+.passage .formMessage .sumbit{
+	background-color:#6b6be4;
+	border-radius:12px;
+	width:100%;
+	height:40px;
+	color:white;
+	font-size:20px;
+	line-height:40px;
+}
+.special-2.specialPassage{
+	margin-top:20px;
+	text-align:center;
+	line-height:60px;
+	color:white;
+}

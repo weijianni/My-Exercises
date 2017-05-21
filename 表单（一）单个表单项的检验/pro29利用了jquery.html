@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>表单（一）单个表单项的检验</title>
+		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				var str = [] ;
+				//设置初始样式
+				$('*').css({'padding' : '0' , 'margin' : '0'}) ;
+				$('form').css({"margin" : "20px"}) ;
+				$('label').css({'font-size' : '18px' }) ;
+				$('.prompt').css({'font-size' : '14px' }) ;
+				$('.name').css({'height' : '36px' , 'border' : '1px solid lightgrey' , 
+				'border-radius' : '8px' , 'margin' : '0 15px 0 10px' , 'font-size' : '20px' , 
+				'line-height' : '36px' , 'text-indent' : '10px' , 'color' : 'lightgrey' , 
+				'outline' : 'none'}) ;
+				$(".name_check").css({'height' : '30px' , 'width' : '60px' , 'padding' : '3px' ,
+				'line-height' : '22px' , 'font-size' : '20px' , 'border' : 'none' , 'color' : 'darkred' , 
+				'background-color' : 'lightblue' , 'cursor' : 'pointer'
+				}) ;
+				//验证字符串是否符合规定
+				$('.name_check').click(function() {
+					var str = $(".name").val();
+					var Sum_Length  ;
+					var chinese_Length = 0 ;
+					var normal_Length = 0 ;
+					//正则表达式（汉字、数字、字母以外的字符）
+					var wrong_Text = /[^\u4e00-\u9fa5\a-zA-Z0-9]/g ;
+					//判断字符串是否为空
+					if(str.length == 0) {
+							$('.prompt').css({'color' : 'red'}).text('名称不能为空') ;
+							$('.name').css({'border-color' : 'red' , 'color' : 'red'}) ;
+							return ;
+						}
+					else {
+					  for(var i=0 ; i<str.length ; i++) {
+						var chinese_Match = /[\u4e00-\u9fa5]/g ;
+						var normal_Match = /[a-zA-Z0-9]/g ;
+						//判断字符串是否包含不符合规定的字符
+						if(wrong_Text.test(str[i])) {
+							$(".prompt").css({"color" : "yellow"}).text($(".name").val()+'      名称格式不对') ;
+							$(".name").css({"border-color":"yellow",'color' : 'yellow'}) ;
+							return ;
+						}
+						//一个汉字的长度等于两个字符的长度
+						else if(chinese_Match.test(str[i])) {
+							chinese_Length += 2 ;
+						}
+						else if(normal_Match.test(str[i])) {
+							normal_Length++ ;
+						}
+					  }
+					  //输入的字符串的总长度
+					  Sum_Length = normal_Length + chinese_Length ;
+					  //输入的字符串的总长度应该为4到16
+					if(Sum_Length>=4&&Sum_Length<=16) {
+						$(".prompt").css({"color" : "lightgreen"}).text('您输入的名称符合规定，名称为：'+$('.name').val()) ;
+						$(".name").css({"border-color":"lightgreen",'color' : 'lightgreen'}) ;
+						return ;
+					}
+					else {
+						$(".prompt").css({"color" : "blue"}).text('字符的长度不对，该字符串长度为'+Sum_Length) ;
+						$(".name").css({"border-color":"blue",'color' : 'blue'}) ;
+						return ;
+					}
+					}
+					
+				}) ;
+				//验证完字符串之后，输入新字符串前自动清除text文本框
+				$('.name').focus(function() {
+					$(this).val("") ;
+				}) ;
+			}) ;
+		</script>
+	</head>
+	<body>
+		<form id="list">
+			<p>
+			<label>名称</label>
+			<input type="text"maxlength="20"class="name"placeholder="必填">
+			<input type="button"class="name_check"value="验证"/>
+			</p>
+			<br/>
+			<label class="prompt">要求：长度为4~16个字符;姓名不能为空;名称由数字、字母和汉字组成</label>
+			<br/><br/>
+			
+		</form>
+		
+	</body>
+</html>

@@ -1,0 +1,202 @@
+*  {
+	padding : 0 ;
+	margin : 0 ;
+	font-family : "黑体" ;
+	box-sizing : border-box ;
+}
+html {
+	background-color : #02071D ;
+}
+body {
+	width : 1200px ;
+	margin : 0 auto ;
+}
+	button {
+		cursor : pointer ;
+		border : none ;
+		position : absolute ;
+		background-color : lightblue ;
+		color : white ;
+		border-radius : 50% ;
+	}
+/*上半部分（飞船运行）*/
+	.section-1 {							
+		width : 100% ;
+		height : 480px ;
+		background-color : brown ;
+	}
+		#sun {
+			display : inline-block ;
+			width : 120px ;
+			height : 120px ;
+			border : none ;
+			border-radius : 60px ;
+			background-color : darkred ;
+			margin : 40px ;
+		}
+			.line {																	/*轨道*/
+				border : 2px solid white ;
+				display : inline-block ;
+				position : relative ;
+			}
+			.line-4 {
+				width : 200px ;
+				height : 200px ;
+				border-radius : 100px ;
+				margin : 40px ;
+			}
+			.line-3 {
+				width : 280px ;
+				height : 280px ;
+				border-radius : 140px ;
+				margin : 40px ;
+			}
+			.line-2 {
+				width : 360px ;
+				height : 360px ;
+				border-radius : 180px ;
+				margin : 40px ;
+			}
+			.line-1 {
+				width : 440px ;
+				height : 440px ;
+				border-radius : 220px ;
+				margin : 20px 380px ;
+			}
+			.ship {											/*飞船样式*/
+				width : 20px ;
+				height : 30px ;
+				background-color : red ;
+				position : absolute ;
+				top : 50% ;
+				left : 50% ;
+				margin : -15px 0 0 -10px ;
+				
+			}
+				.per {
+					width : 100% ;
+					background-color : darkred ;
+					font-size : 5px ;
+					text-align : center ;
+				}
+			.ship-4 {
+				animation : action-1  linear 0s infinite paused ;
+			}
+			.ship-3 {
+				animation : action-2  linear 0s infinite paused ;
+			}
+			.ship-2 {
+				animation : action-3  linear 0s infinite paused ;
+			}
+			.ship-1 {
+				animation : action-4  linear 0s infinite paused ;
+			}
+				@keyframes action-1				{						/*圆形轨道动画*/
+					from {
+						transform : rotate(0deg) translate(100px) ;
+					}
+					to {
+						transform : rotate(360deg) translate(100px) ; 
+					}
+				}
+				@keyframes action-2				{
+					from {
+						transform : rotate(0deg) translate(140px) ;
+					}
+					to {
+						transform : rotate(360deg) translate(140px) ; 
+					}
+				}
+				@keyframes action-3				{
+					from {
+						transform : rotate(0deg) translate(180px) ;
+					}
+					to {
+						transform : rotate(360deg) translate(180px) ; 
+					}
+				}
+				@keyframes action-4				{
+					from {
+						transform : rotate(0deg) translate(220px) ;
+					}
+					to {
+						transform : rotate(360deg) translate(220px) ; 
+					}
+				}
+				
+/*下半部分（控制、信息显示）*/
+	.section-2 {
+		width : 100% ;
+		height : 180px ;
+		background-color : gray ;
+	}
+		.section-2>div {
+			float : left ;
+			border : none ;
+			margin : 0 ;
+		}
+			.section-2>div div {
+				text-align : center ;
+			}
+		 .ctrl {                                        /*控制器的样式*/
+			height : 180px ;
+			width : 720px ;
+			background-color : blue ;
+		}
+			.ctrl>.ctrl_ship {
+				width : 24% ;
+				height : 100% ;
+				float : left ;
+				margin-right : 5px ;
+				background-color : yellow ;
+				position : relative ;
+			}
+				.ctrl>.ctrl_ship>.number {
+					width : 60px ;
+					height : 60px ;
+					font-size : 50px ;
+					top : 60px ;
+					left : 30px ;
+					opacity : 1 ;
+				}
+					.ctrl>.ctrl_ship>button {
+						width : 30px ;
+						height : 30px ;
+						font-size : 12px ;
+						opacity : 0 ;
+						transition : opacity 1s ;
+					}
+					.ctrl>.ctrl_ship:hover>button {
+						opacity : 1 ;
+					} 
+					.ctrl>.ctrl_ship>.start {
+						top : 30px ;
+						right : 40px ;
+					}
+					.ctrl>.ctrl_ship>.stop {
+						top : 75px ;
+						right : 30px ;
+					}
+					.ctrl>.ctrl_ship>.del {
+						bottom : 30px ;
+						right : 40px ;
+					}
+		.add {																	/*添加按钮*/
+			position : relative ;
+			height : 100% ;
+			width : 120px ;
+			background-color : red ;
+		}
+			.btn {
+				height : 60px ;
+				width : 60px ;
+				line-height :60px ;
+				font-size : 60px ;
+				left : 30px ;
+				top : 60px ;
+			}
+		.console {																/*消息框*/
+			height : 180px ;
+			width : 300px ;
+			background-color : blue ;
+		}

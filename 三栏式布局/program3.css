@@ -1,0 +1,74 @@
+*{
+	margin:0;
+	padding:0;
+}
+.container{
+	margin:0 20px;
+	margin-top:20px;
+	background-color:#eee;
+	border:1px solid #999;
+	height:480px;
+	padding:20px;
+	width:90%;
+}
+.teamLogo{
+	float:left;
+	width:200px;
+	height:120px;
+	background-color:white;
+	border:1px solid #999;
+	padding:20px;
+}
+.container .teamLogo .logoPicture table{
+	font-size:11px;
+	float:left;
+	width:80px;
+	height:80px;
+	background-color:#eee;
+	border:1px solid #999;
+}
+.container .teamLogo .teamName{
+    float:right;
+	font-size:13px;
+    font-weight:bold;
+	display:inline-block;
+}
+.content{
+	float:left;
+	padding: 20px 20px;
+	background-color: white;
+	margin: 0 20px;
+	font-size:18px; 
+	border:1px solid;
+	max-width:783px;
+}
+.personalLogo{
+	float:right;
+	background-color:white;
+	border:1px solid #999;
+	display:inline-block;
+	width:120px;
+}
+.container .personalLogo .logo{
+	margin:0 20px ;
+	margin-top:20px;
+	width:80px;
+	height:80px;
+	background-color:#eee;
+	border:1px solid #999;
+	display:inline-block;
+	text-align:center;
+}
+.container .personalLogo .logo .logo-content{
+	display:inline-block;
+	font-size:11px;
+	margin:20px 0;
+	font-weight:bold;
+}
+.container .personalLogo .logo img{
+	height:80px;
+	width:80px;
+}
+.container .personalLogo .logo-1{
+	margin-bottom:20px;
+}

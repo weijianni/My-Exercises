@@ -1,0 +1,25 @@
+	.button {
+					background-color : lightblue ;
+					border : 1px solid #d6d6d6 ;
+					border-radius : 3px ;
+					cursor : pointer ;
+			}
+			.button:nth-child(4) {
+				margin-left : 30px ;
+			}
+			#output {
+				display : flex;
+				flex-flow : row nowrap ;
+				align-items : flex-end ;
+				justify-content : flex-start ;
+			}
+			#output>div{
+				display : inline-block ;
+				width : 20px ;
+				padding : 10px 15px ;
+				color : white ;
+				margin : 5px 10px ;
+				font-size : 20px ;
+				text-align : center ;
+				background-color : red ;
+			}

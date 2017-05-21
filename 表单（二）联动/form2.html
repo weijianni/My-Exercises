@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<title>表单（联动）</title>
+		<style>
+			* {
+				padding : 0 ;
+				margin : 0 ;
+				font-family : '黑体' ;
+			}
+			#list {
+				width : 600px ;
+				margin : 60px auto ;
+				text-align : center ;
+			}
+			div {
+				margin-bottom : 20px ;
+				font-size : 30px ;
+			}
+			#worker {
+				margin-left : 160px ;
+			}
+			select {
+				height : 30px ;
+				padding : 2px ;
+				margin-left : 20px ;
+				font-size : 20px ;
+				border : 1px solid lightgrey ;
+				border-radius : 4px ;
+				width : 160px ;
+			}
+			#detailed_State {
+				height : 36px ;
+				line-height : 36px ;
+				font-size : 20px ;
+			}
+			#work_Position {
+				height : 32px ;
+				border : 1px solid lightgrey ;
+				border-radius : 4px ;
+				font-size : 22px ;
+				margin : 0 0 0 20px ;
+				outline : none ;
+			}
+		</style>
+		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				//当选择在校生时，根据选择不同的省份或城市会有该地区的大学选择栏
+				function check() {
+					if($('#province').find('option:selected').text()=='广东') {
+						$('#school').html(gd_School) ;
+					}
+					if($('#province').find('option:selected').text()=='上海') {
+						$('#school').html(sh_School) ;
+					}
+					if($('#province').find('option:selected').text()=='北京') {
+						$('#school').html(bj_School) ;
+					}
+				}
+				var str_state = [] ;
+				var str_school = [] ;
+				var str_province = '<select id="province"name="province">'+
+									'<option id="beijing">北京</option>'+
+									'<option id="guangdong">广东</option>'+
+									'<option id="shanghai"selected="">上海</option>'+
+									'</select>' ;
+				var bj_School = '<option id="bjdx">北京大学</option>'+
+								'<option id="qhdx">清华大学</option>'+
+								'<option id="bjrmdx">北京人民大学</option>' ;
+				var gd_School = '<option id="zsdx">中山大学</option>'+
+								'<option id="hnlgdx">华南理工大学</option>'+
+								'<option id="hnsfdx">华南师范大学</option>' ;
+				var sh_School = '<option id="shjtdx">上海交通大学</option>'+
+								'<option id="fddx">复旦大学</option>'+
+								'<option id="tjdx">同济大学</option>' ;
+				str_school.push(bj_School) ;
+				str_school.push(gd_School) ;
+				str_school.push(sh_School) ;
+				//根据选择在校生或者非在校生显示不同的表单
+				var student_Text = '学校' + str_province + '<select id="school"name="school"></select>' ;
+				var worker_Text = '就业单位' + '<input type="text"id="work_Position">' ;
+				str_state.push(student_Text) ;
+				str_state.push(worker_Text) ;
+				$(detailed_State).html(str_state[0]) ;
+				var radio_Number = $('#radio_Check').children().length ;for(var i = 0 ; i<str_school.length ; i++) {
+					check() ;
+				}
+				//切换城市时，学校选项随之切换
+				$('#province').change(check) ;
+				$('#radio_Check').change(function() {
+					for(var i = 0 ; i<radio_Number ; i++) {
+						//选择在校生的情况
+						if($('#radio_Check input:checked').attr('id')=='student') {
+							$(detailed_State).html(str_state[0]) ;
+						}
+						//选择非在校生的情况
+						else if($('#radio_Check input:checked').attr('id')=='worker') {
+							$(detailed_State).html(str_state[1]) ;
+						}
+					}
+					//判断初始情况下城市选项是否存在selected项
+					for(var i = 0 ; i<str_school.length ; i++) {
+						check() ;
+					}
+					//切换城市时，学校选项随之切换
+					$('#province').change(check) ;
+				}) ;
+			}) ;
+		</script>
+	</head>
+	<body>
+		<form id='list'>
+			<div id='radio_Check'>
+				<input type='radio'name='position'id='student'checked='checked'/><label for='student'>在校生</label>
+				<input type='radio'name='position'id='worker'/><label for='worker'>非在校生</label>
+			</div>
+			<div id='detailed_State'>
+				<font size='20'>dsafas</font>
+			</div>
+		</form>
+	</body>
+</html>

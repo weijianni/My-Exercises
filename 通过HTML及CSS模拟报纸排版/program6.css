@@ -1,0 +1,375 @@
+* {
+	padding : 0px;
+	margin : 0px;
+}
+body {
+	background-color : #696464;
+}
+section {
+	margin-top : 30px;
+	display : inline-block;
+}
+.page {
+	height : 1386px;
+	width : 892px;
+	margin : 0 auto;
+	background-color : white;
+	padding : 0 49px;
+}
+.headline {
+	height : 61px;
+	position : relative;
+	font-size : 12px;
+	color : #4b34c1;
+	font-family : "黑体";
+}
+.url {
+	background-image : url("nbaLogo.jpg");
+	background-size : 120%;
+	float : left;
+	height : 61px;
+	width : 110px;
+	position : relative;
+	
+}
+.url-text {
+	position : absolute;
+	right : 0px;
+	bottom : 0px;
+	
+	
+}
+.time {
+	position : absolute;
+	right : 0px;
+	bottom : 0px;
+	margin-bottom : 2px;
+}
+.hr-1 {
+	border :2px solid #ab6549;
+}
+
+.summary {
+	position : relative;
+	width : 100%;
+}
+.summary-img {                                      /*section 1*/
+	width : 641px;
+	height : 301px;
+	float : left;
+	background-image : url("allstar.jpg");
+}
+.summary-text {
+	position : absolute;
+	top : 0;
+	right : 0;
+	width : 203px;
+	height : 100%;
+}
+.hr-2 {
+	border : 1px solid #938e8c;
+}
+.summary-headline {
+	text-decoration : underline;
+	display : inline-block;
+	color : black;
+	font-size :24px;
+}
+.summary-headline-1 {
+	margin-top : 5px;
+}
+.summary-headline-2 {
+	font-size : 12px;
+	color : #676767;
+	font-family : "楷体";
+	line-height : 10px;
+}
+.number {
+	font-size : 116px;
+	color : #75b86b;
+	font-family : "微软雅黑";
+	font-style : oblique;
+	margin-left : -20px;
+	
+}
+.inf {
+	font-family : "微软雅黑";
+	color : #cc8091;
+	position : absolute;
+}
+.inf-1 {
+	font-size : 55px;
+	display : inline-block;
+}
+.inf-2 {
+	font-size : 12px;
+	display : inline-block;
+}
+.inf-3 {
+	font-size : 21px;
+	position : absolute;
+	top : 25px;
+	left : 82px;
+	display : inline-block;
+}
+
+.article .what {                           /*section 2*/
+	width : 228px;
+	float : left;
+    margin-right : 25px;
+}
+.article .what .title-1{                
+	font-size : 16px;
+	color : #418c59;
+	font-family : "微软雅黑";
+	text-decoration : underline;
+	font-weight : bold;
+}
+.article .when {                           
+	width : 208px;
+	float : left;
+	margin-right : 25px;
+}
+.article .when .title-2{                
+	font-size : 16px;
+	color : #d2994f;
+	font-family : "微软雅黑";
+	text-decoration : underline;
+	font-weight : bold;
+}
+.article-content {
+	font-size : 12px;
+	line-height : 16px;
+	font-family  : "微软雅黑";
+	color : #231815;
+	opacity : 0.7;
+}
+.article .how {                           /*section 2*/
+	width : 155px;
+	float : left;
+    margin-right : 25px;
+}
+.article .how .title-3{                
+	font-size : 16px;
+	color : #cc7680;
+	font-family : "微软雅黑";
+	text-decoration : underline;
+	font-weight : bold;
+}
+.article .how .article-content label{
+	color : #cd4a48;
+}
+
+.mainidea {
+	width : 100%;
+}
+.text-left {                              /*section 3*/
+	width : 415px;
+	float : left;
+}
+.text-1 strong {
+	font-size : 72px;
+	color : #f5e327;
+	font-style : oblique;
+}
+.text-1 {
+	font-size : 42px;
+	color : #11456b;
+	font-family : "黑体";
+	font-weight : bold;
+}
+.text-2 {
+	font-size : 33px;
+	color : #11456b;
+	font-family : "黑体";
+	font-weight : bold;
+}
+.hr-3 {
+	margin-top : 10px;
+	border : 1px solid #11456b;
+}
+.firstWord {
+	font-size : 70px;
+	color : #f5e327;
+	font-family : "微软雅黑";
+	float: left;
+	margin-right : 10px;
+}
+.text-left .text-article {
+	font-size : 12px;
+	color : #767777;
+	font-family : "宋体";
+	margin-top : 20px;
+}
+.text-left .text-article  label {
+	line-height : 16px;
+}
+.text-left .text-article img {
+	height : 200px;
+	width : 200px;
+	float : right;
+	margin-top : 5px;
+}
+.text-right {
+	float : right;
+	width : 458px;
+}
+.text-right .east {
+	background-image : url("east.jpg");
+	position : relative;
+	height : 275px;
+	width : 458px;
+    margin-top: 15px;
+}
+.text-right .east .east-under {
+	height : 61px;
+	width : 458px;
+	font-family : "微软雅黑";
+	position : absolute;
+	left : 0px;
+	bottom : 0px;
+	background-color:black;
+	opacity :0.3;
+}
+.text-right .east .east-under .east-under-verticalLine {
+	position : absolute;
+	left : 45px;
+	top : 8px;
+	width : 3px;
+	height : 45px;
+	background-color : #72b16a;
+}
+.text-right .east .east-under .east-under-main {
+	font-size : 26px;
+	color : #ffffff;
+	position : absolute;
+	left : 68px;
+	line-height : 61px;
+}
+.text-right .east .east-under .east-under-secondary {
+	font-size : 12px;
+	color : #12d28d;
+	line-height : 84px;
+	font-style : oblique;
+	position : absolute;
+	left : 300px;
+}
+.text-right .catelogue {
+	width : 459px;
+	height : 318px;
+	background-color : #9da5d8;
+	margin-top : 30px;
+	display : inline-block;
+	position : relative;
+	color : #d28660;
+}
+.text-right .catelogue .up {
+	width : 420px;
+	height : 110px;
+	
+	margin : 30px 0 0 28px;
+}
+.text-right .catelogue .up .triangle {
+	height : 0;
+	width : 0;
+	border-left : 5px solid transparent;
+	border-right : 5px solid transparent;
+	border-bottom : 8px solid #100c40;
+	display: inline-block;
+}
+.text-right .catelogue .up p {
+	
+	margin-top : 10px;
+	
+}
+.text-right .catelogue .down {
+	
+	width : 260px; 
+	height : 160px;
+	position : absolute;
+	bottom : 0;
+	display : inline-block;
+	left : 0;
+	background-color : #bae2af;
+}
+.text-right .catelogue .down .text {
+	height :86px;
+	
+	position : absolute;
+	left : 0;
+	top : 37px;
+	width : 100%;
+	display : inline-block;
+	
+}
+.text-right .catelogue .down .text .num {
+	font-size : 75px;
+	line-height : 86px;
+	font-family : "Microsoft YaHei";
+	color : #ffffff;
+	float : left;
+}
+.text-right .catelogue .down .text .ver-line {
+	height : 75px;
+	width : 3px;
+	background-color : #ffffff;
+	
+	margin : 5px;
+	float : left;
+}
+.text-right .catelogue .down .text .content {
+	height : 75px;
+	max-width : 190px;
+	
+	float : right;
+	margin : 5px 8px 0 5px;
+	display : inline-block;
+}
+.text-right .catelogue .down .text .content .p-1 {
+	color : white;
+	font-size : 21px;
+	line-height : 24px;
+}
+.text-right .catelogue .down .text .content .p-2 {
+	color : white;
+	font-size : 12px;
+	line-height : 6px;
+}
+.down-r {
+	height :160px;
+	width : 190px;
+	position : absolute;
+	bottom : 0;
+	right : 0;
+	
+	
+}  
+.down-r label{
+	font-size : 14px;
+	font-style : oblique;
+	line-height : 16px;
+}
+.down-r span {
+	font-size : 30px;
+	font-family : "黑体";
+	color : #d45d5c;
+	line-height : 16px;
+} 
+
+footer {                               /*footer*/
+	margin-top: 30px;
+	width : 100%;
+	
+	background-color : red;
+}
+footer .line {
+	width : 100%;
+	height : 1px;
+	background-color : #938e8c;
+}
+footer .text {
+	font-size : 12px;
+	color : #d45d5c;
+	font-family : "黑体";
+	float : right;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>基础JavaScript练习（一）</title>
+		<style type="text/css">
+			#output>div{
+				display : inline-block ;
+				height : 30px ;
+				width : 30px ;
+				padding : 10px 15px ;
+				background-color : red ;
+				color : white ;
+				margin : 5px 10px ;
+				line-height : 30px ;
+				text-align : center ;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="input">
+			<input type="text"id="text"/>
+			<input type="button"value="左侧入"/>
+			<input type="button"value="右侧入"/>
+			<input type="button"value="左侧出"/>
+			<input type="button"value="右侧出"/>
+		</div>
+		<div id="output">
+		
+		</div>
+		<script>
+			function addEvent(element, event, listener) {
+				if (element.addEventListener) {
+					element.addEventListener(event, listener, false);
+				}
+				else if (element.attachEvent) {
+					element.attachEvent("on" + event, listener);
+				}
+				else {
+					element["on" + event] = listener;
+				}
+			}
+	
+			function init() {
+				
+				var list = document.getElementsByTagName("input") ;
+				var word = document.getElementById("text") ;
+				var output = document.getElementById("output") ;
+				var queue = {
+					str : [] ,
+					leftpush : function(num) {
+						if(isNaN(parseFloat(word.value))||(word.value!=parseFloat(word.value.toString()))) {
+						alert("输入应为数字") ;
+						}
+						else {
+							this.str.unshift(num) ;
+							this.display() ;
+						} 
+					},
+					rightpush : function(num) {
+						if(isNaN(parseFloat(word.value))||(word.value!=parseFloat(word.value.toString()))) {
+						alert("输入应为数字") ;
+						}
+						else {
+							this.str.push(num) ;
+							this.display() ;
+						} 
+					},
+					leftpop : function() {
+						if(this.str!="") {
+						var left_out = this.str.shift() ;
+						alert(left_out) ;
+						this.display() ;
+						}
+						else {alert("为空了") ;}
+					},
+					rightpop : function() {
+						if(this.str!="")  {
+						var right_out = this.str.pop() ;
+						alert(right_out) ;
+						this.display() ;
+						}
+						else {alert("为空了") ;}
+					},
+					display : function() {
+						output.innerHTML = "" ;
+						for(var i=0 ; i<this.str.length ; i++) {
+							output.innerHTML +="<div>"+this.str[i]+"</div>"
+						}
+						addDivEvent() ;
+					},
+					deletediv : function(a) {
+						alert(this.str[a]) ;
+						this.str.splice(a, 1);
+						this.display();
+					}
+				};
+				function addDivEvent() {
+					for (var j=0 ; j<output.childNodes.length ; j++) {
+						 output.childNodes[j].j=j;
+						addEvent(output.childNodes[j],"click",function() {queue.deletediv(this.j)});
+					}
+				}
+				addEvent(list[1],"click",function() {
+					var input = document.getElementById("text").value ;
+					queue.leftpush(input) ;
+				});
+				addEvent(list[2],"click",function() {
+					
+					var input = document.getElementById("text").value ;
+					queue.rightpush(input) ;
+				});
+				addEvent(list[3],"click",function() {
+					queue.leftpop() ;
+				});
+				addEvent(list[4],"click",function() {
+					queue.rightpop() ;
+				});
+			}
+			init() ;
+		</script>
+	</body>
+</html>

@@ -1,0 +1,28 @@
+* {
+	margin : 0 ;
+	padding : 0 ;
+	font-family : "宋体" ;
+}
+	body {
+		margin : 20px 30px ;
+	}
+		body>form>div {
+			line-height : 45px ;
+		}
+			body>form>div:nth-child(3)>button {
+				padding : 2px 6px ;
+				cursor : pointer ;
+			}
+		body>form>table {
+			margin-top : 30px ;
+			border-top : 2px solid lightblue ;
+			border-left : 2px solid lightblue ;
+		}
+			body>form>table td{
+				border-bottom : 2px solid lightblue ;
+				border-right : 2px solid lightblue ;
+				padding : 5px ;
+				text-align : center ;
+				height : 30px ;
+				width : 90px ;
+			}

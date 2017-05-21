@@ -1,0 +1,32 @@
+*{
+	margin : 0;
+	padding : 0;
+}
+.container {
+	height : 200px;
+	width : 400px;
+	background-color : #ccc;
+	position : absolute;
+    display:inline-block;
+	top : 50%;
+	margin-top : -100px;
+	left : 50%;
+	margin-left : -200px;
+}
+.qurant {
+	height : 50px;
+	width : 50px;
+	display:inline-block;
+	background-color : #fc0;
+	position : absolute;
+}
+.qurant-1 {
+	border-radius : 0 0 50px 0;
+	left : 0px;
+	top : 0px;
+}
+.qurant-2{
+	border-radius : 50px 0 0 0;
+	right : 0px;
+	bottom : 0px;
+}

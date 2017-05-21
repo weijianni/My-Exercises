@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>零基础HTML编码（一）</title>
+	<link rel="stylesheet"type="text/css"href="program2.css">
+</head>
+<body link="#9933ff">
+	<div class="special-1 specialPassage">
+	<ul>
+		<li><a href="#">导航链接一</a></li>
+		<li><a href="#">导航链接二</a></li>
+		<li><a href="#">导航链接三</a></li>
+		<li><a class="special-a"href="#">导航链接四</a></li>
+	</ul>
+	</div>
+	<div class="passage">
+	<h2>文章一级标题</h2>
+	<h3>文章二级标题</h3>
+		<p class="articleMessage">文章作者 文章发表时间</p>
+		<p>这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,
+		<br/>
+		换行了<br/>
+		这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,
+		<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落,这是一个很长很长的段落,
+		<br/>
+		<img src="program2.jpg">
+		</p>
+		</div>
+	<div class="passage">
+	<h2>另一篇文章一级标题</h2>
+	<h3>文章二级标题</h3>
+		<p class="articleMessage">文章作者 文章发表时间</p>
+		<p>这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,
+		<br/>
+		换行了<br/>
+		这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,
+		<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落,这是一个很长很长的段落,
+		<br/>
+		<img src="program2.jpg">
+		<ul>
+			<li>列表项目一</li>
+			<li>列表项目二</li>
+			<li>列表项目三</li>
+		</ul>
+		</p>
+		</div>
+		<div class="passage">
+		<h2>图片</h2>
+			<ul class="thePictureList">
+				<li>
+					好看的图片<br/>
+				    <img src="program2.jpg">
+				</li>
+				<li>
+					好看的图片<br/>
+				    <img src="program2.jpg">
+				</li>
+				<li>
+					好看的图片<br/>
+				    <img src="program2.jpg">
+				</li>
+				<li>
+					好看的图片<br/>
+				    <img src="program2.jpg">
+				</li>
+			</ul>
+		</div>
+		<div class="passage">
+			<h2>最后一篇文章一级标题</h2>
+	        <h3>文章二级标题</h3>
+			<p class="articleMessage">文章作者 文章发表时间</p>
+			<ol>
+				<li>排名1</li>
+				<li>排名2</li>
+				<li>排名3</li>
+			</ol>
+			下面是一个表格，给表格加了一个border="1"好让你看出是一个表格
+			<br/>
+			<table class="list">
+				<thead>
+					<tr>
+						<th>表头</th>
+						<th>表头</th>
+						<th>表头</th>
+					</tr>
+				</thead>
+				<tbody >
+					<tr>
+						<th>表内容单元格</th>
+						<th>表内容单元格</th>
+						<th class="listUnit">操作</th>
+					</tr>
+					<tr>
+						<th>表内容单元格</th>
+						<th>表内容单元格</th>
+						<th class="listUnit">操作</th>
+					</tr>
+					<tr>
+						<th>表内容单元格</th>
+						<th>表内容单元格</th>
+						<th class="listUnit">操作</th>
+					</tr>
+					<tr>
+						<th>表内容单元格</th>
+						<th>表内容单元格</th>
+						<th class="listUnit">操作</th>
+					</tr>
+					<tr class="list-last">
+						<th>总计</th>
+						<th colspan="2">1000</th>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="passage">
+			<h4>这里以后是一个侧栏，这是侧栏的标题</h4>
+			<form class="formMessage">
+			<div>
+			<label>请输入邮箱地址：</label><input type="text"value="这是一个文本输入框">
+			</div>
+			<br/>
+			
+			<p>邮箱地址请按要求格式输入</p>
+			<div>
+			<label>请输入密码：</label><input type="password"onmouseover="this.select()"value="这是一个密码输入框">
+			</div>
+		  
+			<div>
+      		<label>请重复输入密码：</label><input type="password"onmouseover="this.select()"value="这是一个密码输入框">
+			</div>
+			<p>密码请为6-16位英文数字</p>
+			
+			<div>
+			<label>性别：</label><input type="radio"checked="checked"name="sex">男<input type="radio"name="sex">女
+			</div>
+		
+			<div>
+			<label>城市：</label>&nbsp<select>
+				<option>北京</option>
+				<option>上海</option>
+				<option>广州</option>
+			</select>
+			</div>
+			
+			<div>
+			<label>爱好：</label><input type="checkbox"name="hobit">运动&nbsp<input type="checkbox"name="hobit">艺术&nbsp<input type="checkbox"name="hobit">科学&nbsp
+			</div>
+			
+			<div>
+			<label>个人描述：</label><textarea cols="100">这是一个多行输入框，输入您的个人描述</textarea>
+			</div>
+		
+			<input type="submit"value="确认提交"class="sumbit">
+			</form>
+		</div>
+		<div class="specialPassage special-2">
+		<footer>版权所有©</footer>
+		</div>
+</body>
+</html>

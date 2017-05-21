@@ -1,0 +1,805 @@
+* {
+	margin : 0 ;
+	padding : 0 ;
+	    font-family: "SimHei","Microsoft Yahei","Arial";
+	list-style : none ;
+	background-repeat : no-repeat ;
+}
+.container {
+	min-width : 1200px ;
+	min-height : 1240px ;
+	position : relative ;
+}
+	footer {                                          /*footer*/
+		width : 100% ;
+		height : 60px ;
+		background-color : #2189BF ;
+		background-image : url("1.png") ;
+		background-position : 50px center ;
+	}
+		footer .search {
+			height : 30px ;
+			float : right ;
+			margin-top : 15px ;
+			line-height : 30px ;
+		}
+			footer .search>input {
+				width : 150px ;
+				height : 30px ;
+				padding : 0 40px ;
+				background-image : url("2.png") ;
+				background-position : 20px center ;
+				border-radius : 20px ;
+				border : none ;
+			}
+			footer .search .login {
+				width : 45px ;
+				height : 30px ;
+				display : inline-block ;
+				float : right ;
+				margin-right : 100px ;
+				margin-left : 20px ;
+				text-align : right ;
+				background-image : url("3.png") ;
+				background-position : left center ;
+				color : white ;
+				font-size : 10px ;
+				cursor : pointer ;
+			}
+	section {											
+		width : 100% ;									
+	}
+		section .left {								/*left*/
+			width : 20% ;
+			position : absolute ;
+			bottom : 0px ;
+			top : 60px ;
+			display : inline-block;
+		}
+			section .left .user {					/*left-up*/
+				width : 100% ;
+				height : 150px ;
+				background-color : #2A2E3D ;
+				text-align : center ;
+				font-size : 14px ;
+			}	
+				section .left .user .inf-1 {
+					height : 64px ;
+					line-height : 64px ;
+					color : white ;
+					display : inline-block ;
+					margin-top : 20px ;
+				}
+					section .left .user .inf-1 .outline {
+						display : inline-block ;
+						height : 64px ;
+						width : 64px ;
+						border-radius : 32px ;
+						border : 1px solid white ;
+						float : left ;
+					}
+						section .left .user .inf-1 .outline .head {
+							height : 58px ;
+							width : 58px ;
+							margin : 3px ;
+							border-radius : 29px ;
+							background-image : url("head.jpg") ;
+							background-position : center center ;
+						}
+					section .left .user .inf-1 .name {
+						display : inline-block ;
+						float : left ;
+						margin-left : 12px ;
+					}
+				section .left .user .inf-2 {
+					display : inline-block ;
+					height : 48px ;
+					color : gray ;
+					width : 100% ;
+					margin-top : 20px ;
+					font-size : 0px ;                                                                     /*去除display : inline-block之间的间距*/
+				}
+					section .left .user .inf-2>div {
+						padding : 0 20px ;
+						margin : 0;
+						font-size : 14px ;                                                           
+					}
+					section .left .user .inf-2 .collections {
+						display : inline-block ;
+						border-right : 1px solid gray ;
+						
+					}
+					section .left .user .inf-2 .fans {
+						display : inline-block ;
+						border-left : 1px solid gray ;
+					}
+			section .left .catelogue {					/*left-middle*/
+				width : 100% ;
+				height : 195px ;
+				background-color : #383D4E ;
+			}
+				section .left .catelogue .list {
+					font-size : 12px ;
+					line-height :30px ;
+					color : white ;
+					padding-left : 50px ;
+					background-image : url("个人报表.png") ;
+					background-position : 35px 8px ;
+				}
+					section .left .catelogue .list .main>li .arrow-right {
+						background-image : url("右箭头.png") ;
+						height : 30px ;
+						width : 12px ;
+						float : left ;
+						background-position : left center ;
+						
+					}
+					section .left .catelogue .list .main>li .doc {
+						background-image : url("文件.png") ;
+						height : 30px ;
+						width : 12px ;
+						float : left ;
+						background-position : left center ;
+						margin : 0 5px ;
+					}
+					section .left .catelogue .list .main>li .arrow-down {
+						background-image : url("下箭头.png") ;
+						height : 30px ;
+						width : 12px ;
+						display : inline-block ;
+						float : left ;
+						background-position : left center ;
+						
+					}
+					section .left .catelogue .list .main>li .file {
+						background-image : url("文档.png") ;
+						height : 30px ;
+						width : 12px ;
+						float : left ;
+						background-position : left center ;
+						margin : 0 5px 0 20px ;
+					}
+			section .left .function {						/*left-down*/
+				background-color : #2A2E3D ;
+				width : 100% ;
+				position : absolute ;
+				bottom : 0 ;
+				top : 345px ;
+				font-size : 12px ;
+				color : #6b7d90 ;
+			}
+				section .left .function .func {
+					
+					padding :16px 50px ;
+				}
+				section .left .function .func .star {
+					width : 12px ;
+					height : 12px ;
+					background-image : url("星星.png") ;
+					float : left ;
+					margin-right : 5px ;
+				}
+				section .left .function .func .share {
+					width : 12px ;
+					height : 12px ;
+					background-image : url("我的分享.png") ;
+					float : left ;
+					margin-right : 5px ;
+				}
+				section .left .function .func .message {
+					width : 12px ;
+					height : 12px ;
+					background-image : url("账户信息.png") ;
+					float : left ;
+					margin-right : 5px ;
+				}
+		section .right {								/*right*/
+			width : 80% ;
+			overflow : hidden ;
+			background-color : #EEEEED ;
+			position : absolute ;
+			bottom : 0 ;
+			top : 60px ;
+			right : 0 ;
+			text-align : center ;
+		}
+			section .right .area {
+				width :866px ;
+				display : inline-block ;
+			}
+			section .right .area-1 {				/*area-1*/
+				line-height : 30px ;
+				font-size : 12px ;
+				color : gray ;
+				background-color : white ;
+				padding-left : 30px ;
+				text-align : left ;
+			}
+				section .right .area-1>label {
+					color : #769ec3 ;
+					font-size : 12px ;
+				}
+			section .right .area-2 	{				/*area-2*/
+				font-size : 12px ;
+				margin-top : 20px ;
+				background-color : white ;
+				position : relative ;
+				padding : 15px 160px 15px 40px ;
+				border : 1px solid #d6c7c7 ;
+				display : inline-block ;
+			}
+			section .right .area-2 .select {			/*select*/						/*select的样式*/
+						border: 1px solid #cacbcb;
+						height: 24px;
+						width : 70px ;
+						font-size :14px ;
+						float : left ;
+						padding-left: 3px;
+						cursor: pointer;
+						margin-bottom: 5px;
+						font-family: SimHei;
+						-moz-appearance:none;
+						-webkit-appearance:none;
+						background: url("下箭头.png") no-repeat right center;
+						background-color : white;
+						padding-right: 14px;
+				}
+				section .right .area-2 .select-short {	/*select-short*/
+					width : 70px ;
+				}
+				section .right .area-2 .select-long {	/*select-long*/
+					width : 120px ;
+				}
+			section .right .area-2 span {
+				color : gray ;
+				float : left ;
+				height : 24px ;
+				line-height : 24px ;
+				margin-right : 5px ;
+			}
+			section .right .area-2 .region {
+				float :left ;
+				display : inline-block ;
+				margin-right : 30px ;
+			}
+			section .right .area-2 .region-2 {
+				padding-right : 30px ;
+				background-image : url("换.png") ;
+				background-position : right center ;
+			}
+			section .right .area-2 .region-4 {
+				width : 130px ;
+				position : absolute ;
+				top : 0 ;
+				bottom : 0 ;
+			}
+				section .right .area-2 .region-4>input {
+					height : 26px ;
+					width : 52px ;
+					background-color : #388AC1 ;
+					color : white ;
+					border : none ;
+					position : absolute ;
+					left : 0 ;
+					top : 50% ;
+					margin-top : -13px ; 
+					cursor : pointer ;
+				}
+			section .right .area-3 {				/*area-3*/
+				
+				margin-top : 10px ;
+			}
+				section .right .area-3>div {
+					display : inline-block ;
+					height : 64px ;
+					float : left ;
+					margin-right : 4px ;
+					border-top : 1px solid #d8d8d8 ;
+					border-left : 1px solid #d8d8d8 ;
+					cursor : pointer ;
+					background-color : white ;
+				}
+				section .right .area-3 .arrow {
+					width : 30px ; 
+					background-position : center center ;
+				}
+				section .right .area-3 .arrow:hover {
+					background-color : #d8d8d8 ;
+				}
+					section .right .area-3 .arrow-1 {
+						background-image : url("左箭头.png") ;
+					}
+					section .right .area-3 .arrow-2 {
+						background-image : url("右箭头.png") ;
+					}
+				section .right .area-3 .inf {
+					width : 106px ;
+					line-height : 30px ;
+					font-size : 14px ;
+				}
+				section .right .area-3 .inf:nth-child(2) {
+					border-top : 2px solid blue ;
+				}
+				section .right .area-3 .inf:hover {
+					border-top : 2px solid blue ;
+				}
+					section .right .area-3 .inf span,label {
+						font-size : 22px ;
+						line-height : 28px ; 
+					}
+					section .right .area-3 .inf span {
+						color : gray ;
+					}
+					section .right .area-3 .inf label {
+						color : orange ;
+					}
+				section .right .area-3 .check {
+					width : 70px ;
+					padding-left : 55px ;
+					line-height : 64px ;
+					font-size : 14px ;
+					text-align : left ;
+					background-image : url("历史查询.png") ;
+					background-position : 20px center ;
+				}
+			section .right .area-4 {					/*area-4*/
+				margin-top : 24px ;
+				text-align : left ;
+				font-size : 12px ;
+
+			}
+			section .right .area-5 {					/*area-5*/
+				margin-top : 5px ;
+			}
+				section .right .area-5>div {
+					width : 172px ;
+					height : 56px ;
+					padding : 5px 10px ;
+					line-height : 28px ;
+					display : inline-block ;
+					background-color : #d8d8d8 ;
+					margin-right : 18px ;
+					position : relative ;
+					text-align : left ;
+					font-size : 12px ;
+				}
+					section .right .area-5>div>label {
+						font-size : 12px ;
+						color : gray ;
+					}
+					section .right .area-5>div>.rect {
+						width :60px ;
+						height : 48px ;
+						position : absolute ;
+						right : 15px ;
+						top : 50% ;
+						margin-top : -24px ;
+						
+					}
+				section .right .area-5>div:nth-child(1) {
+					border-left : 3px solid #43b29d ;
+				}
+				section .right .area-5>div:nth-child(1)>.rect {
+					background-color : #43b29d ;
+				}
+				section .right .area-5>div:nth-child(2) {
+					border-left : 3px solid #388ac1 ;
+				}
+				section .right .area-5>div:nth-child(2)>.rect {
+					background-color : #388ac1 ;
+				}
+				section .right .area-5>div:nth-child(3) {
+					border-left : 3px solid #d04b36 ;
+				}
+				section .right .area-5>div:nth-child(3)>.rect {
+					background-color : #d04b36 ;
+				}
+				section .right .area-5>div:nth-child(4) {
+					border-left : 3px solid #e2cd46 ;
+					margin-right : 0 ;
+				}
+				section .right .area-5>div:nth-child(4)>.rect {
+					background-color : #e2cd46 ;
+				}
+			section .right .area-6,.area-7 {					/*area-6*/
+				margin-top : 10px ;
+				background-color : yellow ;
+				height : 360px ;
+				background-color : white ;
+				font-size : 12px ;
+				text-align :center ;
+			}
+				section .right .area .loc {
+					border : 1px solid #cacbcb ;
+					height : 360px ;
+					position : relative ;
+				}
+				section .right .area-6 .left-6 {
+					width : 64% ;
+					float : left ;
+				}
+				section .right .area-6 .right-6 {
+					width : 35% ;
+					float : right ;
+				}
+				section .right .area-7 .left-7 {
+					width : 38% ;
+					float : left ;
+				}
+				section .right .area-7 .right-7 {
+					width : 61% ;
+					float : right ;
+				}
+					section .right .area .loc .headline {
+					height : 30px ;
+					line-height : 30px ;
+					background-color : #f4f5f6 ;
+					color : #bcb5ae ;
+					text-align : left ;
+					padding-left : 15px ;
+					border-bottom : 1px solid #bcb5ae ;
+				}
+					section .right .area .loc .content-6-left {
+						background-color :red ;
+						position : relative ;
+						margin : 25px 0 0 30px ;
+					}
+					
+						section .right .area .loc .content-6-left .content-6-title {
+							height : 30px ;
+							width : 80px ;
+							border-radius : 5px 5px 0 0;
+							display : inline-block ;
+							float : left ;
+							line-height : 30px ;
+							background-color : #f4f5f6 ;
+							margin-right : 3px ;
+							cursor : pointer ;
+						}
+						section .right .area .loc .content-6-left .block {	
+							height : 4px ;
+							width : 80px ;
+							background-color : white ;
+							display : none ;
+						}
+						section .right .area .loc .content-6-left .block-1 {											/*block-1*/
+							position : absolute ;
+							top : 30px ;
+							left : 1px ;
+						}	
+						section .right .area .loc .content-6-left .block-2 {											/*block-2*/
+							position : absolute ;
+							top : 30px ;
+							left : 84px ;
+						}	
+						section .right .area .loc .content-6-left .block-3 {											/*block-3*/
+							position : absolute ;
+							top : 30px ;
+							left : 167px ;
+						}	
+						section .right .area .loc .content-6-left .block-4 {											/*block-4*/
+							position : absolute ;
+							top : 30px ;
+							left : 250px ;
+						}	
+						section .right .area .loc .content-6-left .block-5 {											/*block-5*/
+							position : absolute ;
+							top : 30px ;
+							left : 333px ;
+						}	
+						section .right .area .loc .content-6-left .content-6-content {
+							position : absolute ;
+							left : 0 ;
+							top : 30px ;
+							border : 1px solid #dddddd ;
+							display : none ;
+						}
+						section .right .area .loc .content-6-left .title-1 {											/*没有hover时显示项目一*/
+							background-color : white ;
+							border : 1px solid #dddddd ;
+							border-bottom : none ;
+						}
+							section .right .area .loc .content-6-left .title-1 .con-1{
+								display :block ;
+							}	
+							section .right .area .loc .content-6-left .title-1 .block-1 {
+								display : block ;
+							}
+						section .right .area .loc .content-6-left:hover .content-6-content{
+							display : none ;
+						}
+						section .right .area .loc .content-6-left:hover .title-1 {											
+							background-color : #f4f5f6 ;
+							border : none ;
+						}
+						section .right .area .loc .content-6-left .title-1:hover {											/*title-1 : hover*/
+							background-color : white ;
+							border : 1px solid #dddddd ;
+							border-bottom : none ;
+						}
+							section .right .area .loc .content-6-left .title-1:hover .con-1{
+								display :block ;
+							}	
+							section .right .area .loc .content-6-left .title-1:hover .block-1 {
+								display : block ;
+							}
+						section .right .area .loc .content-6-left .title-2:hover {											/*title-2 : hover*/
+							background-color : white ;
+							border : 1px solid #dddddd ;
+							border-bottom : none ;
+						}
+							section .right .area .loc .content-6-left .title-2:hover .con-2{
+								display :block ;
+							}
+							section .right .area .loc .content-6-left .title-2:hover .block-2 {
+								display : block ;
+							}
+						section .right .area .loc .content-6-left .title-3:hover {											/*title-3 : hover*/
+							background-color : white ;
+							border : 1px solid #dddddd ;
+							border-bottom : none ;
+						}
+							section .right .area .loc .content-6-left .title-3:hover .con-3{
+								display :block ;
+							}
+							section .right .area .loc .content-6-left .title-3:hover .block-3 {
+								display : block ;
+							}
+						section .right .area .loc .content-6-left .title-4:hover {											/*title-4 : hover*/
+							background-color : white ;
+							border : 1px solid #dddddd ;
+							border-bottom : none ;
+						}
+							section .right .area .loc .content-6-left .title-4:hover .con-4{
+								display :block ;
+							}
+							section .right .area .loc .content-6-left .title-4:hover .block-4 {
+								display : block ;
+							}
+						section .right .area .loc .content-6-left .title-5:hover {											/*title-5 : hover*/
+							background-color : white ;
+							border : 1px solid #dddddd ;
+							border-bottom : none ;
+						}
+							section .right .area .loc .content-6-left .title-5:hover .con-5{
+								display :block ;
+							}
+							section .right .area .loc .content-6-left .title-5:hover .block-5 {
+								display : block ;
+							}
+							section .right .area .loc .content-6-left .content-6-content .table {
+								width : 400px ;
+								height : 180px ;
+								border : 1px solid #dddddd ;
+								margin : 25px 40px 34px 30px ;
+								
+							}
+								section .right .area .loc .content-6-left .table td {
+									height : 30px ;
+									border : 1px solid #dddddd ;
+									font-size : 12px ;
+								}
+				section .right .area-6 .right-6 {
+					position : relative ;
+				}
+					section .right .area-6 .right-6 .right-text {
+						text-align : left ;
+						margin-left : 50px ;
+						margin-top : 14px ;
+					}
+						section .right .area-6 .right-6 .right-text h1,p {
+							font-size : 10px ;
+							font-weight : normal ;
+							line-height : 18px ;
+						}
+				
+						section .right .area-6 .right-6 .right-text h1 {
+							color : #c3c2c2 ;
+						}
+					section .right .area-6 .right-6 .silver-line {
+						background-color : #e7e7e7 ;
+					}
+						section .right .area-6 .right-6 .line-1 {
+							height : 1px ;
+							width : 230px ;
+							position : absolute ;
+							left : 38px ;
+							top : 90px ;
+						}
+						section .right .area-6 .right-6 .line-2 {
+							height : 1px ;
+							width : 260px ;
+							position : absolute ;
+							left : 38px ;
+							top : 130px ;
+						}
+						section .right .area-6 .right-6 .line-3 {
+							height : 40px ;
+							width : 1px ;
+							position : absolute ;
+							left : 100px ;
+							top : 90px ;
+						}
+						section .right .area-6 .right-6 .line-4 {
+							height : 1px ;
+							width : 240px ;
+							position : absolute ;
+							left : 28px ;
+							bottom : 80px ;
+						}
+					section .right .area-6 .right-6 .last-text {
+						margin-top : 100px ;
+						width : 240px ;
+						text-align : left ;
+						display : inline-block ;
+						height : 40px ;
+						line-height : 40px ;
+						position : relative ;
+					}
+						section .right .area-6 .right-6 .last-text .checkit {
+							height : 10px ;
+							width : 10px ;
+							left : 0 ;
+							top : 50% ;
+							margin-top : 5px ;
+						}
+						section .right .area-6 .right-6 .last-text .find {
+							height : 26px ;
+							width: 52px;
+							background-color: #388AC1;
+							color: white;
+							border: none;
+							position: absolute;
+							right: 0;
+							top: 50%;
+							margin-top: -13px;
+							cursor: pointer;
+						}
+				section .right .area-7 .left-7	.calendar{																/*日历*/
+					width :308px ;
+					display : inline-block ;
+					margin : 12px 0 ;
+					position : relative ;
+					font-size : 12px ;
+				}
+						section .right .area-7 .left-7	.calendar .select-list select{
+							height : 24px ; 
+							width : 70px ;
+							font-size : 12px ;
+							display : inline-block ;
+						}
+						section .right .area-7 .left-7	.calendar .select-list input {
+							width : 70px ;
+							height : 18px ;
+						}
+					section .right .area-7 .left-7	.calendar .datetime {
+						padding : 6px 0 ;
+						margin : 6px 0 ;
+						border-top : 1px solid #a9cfec ;
+						border-bottom : 1px solid #ececed;
+						display : inline-block ;
+					}
+						section .right .area-7 .left-7	.calendar .datetime .date-week {
+							
+							margin : 0 8px ;
+							display : inline-block ;
+							float : left ;
+							height : 28px ;
+							width : 28px ;
+							line-height : 24px ;
+						}
+					section .right .area-7 .left-7	.calendar .day {
+						width  : 100% ;
+						display : inline-block ;
+						font-size : 10px ;
+					}
+						section .right .area-7 .left-7	.calendar .day .week {
+							width : 100% ;
+							display : inline-block ;
+							
+						}
+							section .right .area-7 .left-7	.calendar .day .week-day {
+								display : inline-block ;
+								width : 40px ;
+								height : 40px ;
+								margin : 2px 1px ;
+								border : 1px solid white ;
+							}
+							section .right .area-7 .left-7	.calendar .day .first-week-day {
+								float : right ;
+							}
+							section .right .area-7 .left-7	.calendar .day .normal-week-day {
+								float : left ;
+							}
+								section .right .area-7 .left-7	.calendar .day .week-day>label {
+									font-size :12px ;
+									line-height : 20px ;
+								}
+								section .right .area-7 .left-7	.calendar .day .week-day .special-label {
+									color : #db6d70 ;
+								}
+								section .right .area-7 .left-7 .calendar .day .week-day:hover {
+									border : 1px solid #41c8d6 ;
+								}
+				section .right .area-7 .right-7 {
+					position : relative ;
+				}
+					section .right .area-7 .right-7 .form-1 {
+						width : 500px ;
+						display : inline-block ;
+						font-size : 0 ;
+						margin-top : 10px ;
+					}
+						section .right .area-7 .right-7 .form-1 .col {
+							height : 25px ;
+							border : 1px solid gray ;
+							display : inline-block ;
+							font-size : 10px ;
+							line-height : 25px ;
+							text-indent : 20px ;
+							text-align : left ;
+							border-bottom : none ;
+						}
+						section .right .area-7 .right-7 .form-1 .col-1 {
+							width : 19% ;
+						}
+						section .right .area-7 .right-7 .form-1 .col-2 {
+							width : 25% ;
+							border-left : none ;
+							border-right : none ;
+						}
+						section .right .area-7 .right-7 .form-1 .col-3 {
+							width : 55% ;
+						}
+							section .right .area-7 .right-7 .form-1 .col-3 .proportion {
+								display : inline-block ;
+								margin-left : 20px ;
+								height : 3px ;
+								width : 150px ;
+								background-color : #e0dbdb ;
+							}
+								section .right .area-7 .right-7 .form-1 .col-3 .proportion .pro{
+									display : inline-block ;
+									float : left ;
+									height : 100% ;
+								}
+								section .right .area-7 .right-7 .form-1 .col-3 .proportion .pro-1 {
+									width : 80% ;
+									background-color : #fb6d6d ;
+								}
+								section .right .area-7 .right-7 .form-1 .col-3 .proportion .pro-2 {
+									width : 70% ;
+									background-color : #fb6d6d ;
+								}
+								section .right .area-7 .right-7 .form-1 .col-3 .proportion .pro-3 {
+									width : 60% ;
+									background-color : #fb6d6d ;
+								}
+								section .right .area-7 .right-7 .form-1 .col-3 .proportion .pro-4 {
+									width : 55% ;
+									background-color : #e85b17 ;
+								}
+								section .right .area-7 .right-7 .form-1 .col-3 .proportion .pro-5 {
+									width : 48% ;
+									background-color : #f17439 ;
+								}
+								section .right .area-7 .right-7 .form-1 .col-3 .proportion .pro-6 {
+									width : 45% ;
+									background-color : #39e0f1 ;
+								}
+								section .right .area-7 .right-7 .form-1 .col-3 .proportion .pro-7 {
+									width : 42% ;
+									background-color : #39e0f1 ;
+								}
+								section .right .area-7 .right-7 .form-1 .col-3 .proportion .pro-8 {
+									width : 35% ;
+									background-color : #39e0f1 ;
+								}
+								section .right .area-7 .right-7 .form-1 .col-3 .proportion .pro-9 {
+									width : 30% ;
+									background-color : #39e0f1 ;
+								}
+								section .right .area-7 .right-7 .form-1 .col-3 .proportion .pro-10 {
+									width : 28% ;
+									background-color : #39e0f1 ;
+								}

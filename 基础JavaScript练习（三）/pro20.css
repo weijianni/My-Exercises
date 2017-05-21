@@ -1,0 +1,21 @@
+#input {
+	vertical-align : text-top ;
+}
+#output {
+	margin-top : 15px ;
+}
+	input:nth-child(3) {
+		margin-left : 20px ;
+	}
+	.odiv {
+		display : inline-block ;
+		margin-right : 15px ;
+		padding : 5px 10px ;
+		background-color : red ;
+		color : white ;
+	}
+	.odiv1 {
+		
+		display : inline-block ;
+		
+	}
